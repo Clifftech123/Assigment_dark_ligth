@@ -1,0 +1,98 @@
+	*{
+			margin: 0px;
+			padding: 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			box-sizing: border-box;
+	}
+	/* form styling the start of everthing */
+	div.form{
+			background-color: rgb(218, 218, 218);
+			width: 40%;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 5px;
+			box-shadow: 0px 2px 2px black;
+			margin-top: 50px;
+	}
+		/*Here is the body of the  page  */
+		body{
+      background-color: rgb(226, 226, 226);
+		}
+	/* form  hover of the form */
+	div.form:hover{
+			box-shadow: 0px 2px 5px black;
+	}
+
+	/* Drakblue color on the top */
+	.top{
+			background-color: #2093c2;
+			border-radius: 5px;
+			margin-top: 1px;
+	}
+
+
+	/* The h1 text on the  */
+	h1{
+		color: white;
+		margin-bottom: 10px;
+	}
+
+
+	/* image on the top */
+	#image{
+			clip-path: circle(50% at 50% 50%);
+			width: 150px;
+			background-color: darkblue;
+			margin-top: 10px;
+			box-shadow: 0px 2px 2px black;
+	}
+	/* The input text  first name and second name  */
+
+	input[type="text"],select{
+			padding: 10px;
+			margin-top: 20px;
+			padding: 10px;
+			border: 1px solid darkblue;
+			border-radius: 5px;
+	}
+
+	/* The input text media queries */
+
+	/* The input text  Email  */
+	input[type="Email"],select{
+		padding: 10px;
+		margin: 10px;
+		width: 70%;
+		border: 1px solid darkblue;
+		border-radius: 5px;
+
+
+		
+	}
+	
+	/* The input text  passsword  */
+	input[type="password"],select{
+	padding: 10px;
+	margin: 10px;
+	width: 70%;
+	border: 1px solid darkblue;
+	border-radius: 5px;
+	}
+
+	/* The input button register now   */
+	input[type="button"],select{
+		padding: 10px;
+		margin: 10px;
+		width: 70%;
+		background-color:#2093c2; ;
+		color: white;
+		border-radius: 5px;
+
+	} 
+	hr{
+		background-color: darkblue;
+		color: darkblue;
+		box-shadow: 0px 0px 1px black;
+		border: none;
+	}
+

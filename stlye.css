@@ -1,98 +1,102 @@
-	*{
-			margin: 0px;
-			padding: 0px;
-			font-family: Arial, Helvetica, sans-serif;
-			box-sizing: border-box;
-	}
-	/* form styling the start of everthing */
-	div.form{
-			background-color: rgb(218, 218, 218);
-			width: 40%;
-			padding: 5px;
-			margin: 5px;
-			border-radius: 5px;
-			box-shadow: 0px 2px 2px black;
-			margin-top: 50px;
-	}
-		/*Here is the body of the  page  */
-		body{
-      background-color: rgb(226, 226, 226);
-		}
-	/* form  hover of the form */
-	div.form:hover{
-			box-shadow: 0px 2px 5px black;
-	}
-
-	/* Drakblue color on the top */
-	.top{
-			background-color: #2093c2;
-			border-radius: 5px;
-			margin-top: 1px;
-	}
-
-
-	/* The h1 text on the  */
-	h1{
-		color: white;
-		margin-bottom: 10px;
-	}
-
-
-	/* image on the top */
-	#image{
-			clip-path: circle(50% at 50% 50%);
-			width: 150px;
-			background-color: darkblue;
-			margin-top: 10px;
-			box-shadow: 0px 2px 2px black;
-	}
-	/* The input text  first name and second name  */
-
-	input[type="text"],select{
-			padding: 10px;
-			margin-top: 20px;
-			padding: 10px;
-			border: 1px solid darkblue;
-			border-radius: 5px;
-	}
-
-	/* The input text media queries */
-
-	/* The input text  Email  */
-	input[type="Email"],select{
-		padding: 10px;
-		margin: 10px;
-		width: 70%;
-		border: 1px solid darkblue;
-		border-radius: 5px;
-
-
-		
-	}
-	
-	/* The input text  passsword  */
-	input[type="password"],select{
-	padding: 10px;
-	margin: 10px;
-	width: 70%;
-	border: 1px solid darkblue;
-	border-radius: 5px;
-	}
-
-	/* The input button register now   */
-	input[type="button"],select{
-		padding: 10px;
-		margin: 10px;
-		width: 70%;
-		background-color:#2093c2; ;
-		color: white;
-		border-radius: 5px;
-
-	} 
-	hr{
-		background-color: darkblue;
-		color: darkblue;
-		box-shadow: 0px 0px 1px black;
-		border: none;
-	}
-
+* {  
+    padding: 0;  
+    margin: 0;  
+    box-sizing: border-box;  
+   }  
+   body {  
+    font-family: Arial, Helvetica, sans-serif; 
+    color: var(--color-4);  
+   }  
+   body[data-theme="light"] {  
+    --color-1: rgb(196, 220, 241);  
+    --color-2: white;  
+    --color-3: white;  
+    --color-4: rgb(80, 82, 110);  
+   }  
+   body[data-theme="dark"] {  
+    --color-1: #1e1f26;  
+    --color-2: #292c33;  
+    --color-3: rgb(39, 40, 42);  
+    --color-4: rgb(186, 186, 202);  
+   }  
+   section {  
+    background-color: var(--color-1);  
+    min-height: 100vh;  
+    width: 100%;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+   }  
+   .container {  
+    width: 90%;  
+    margin: 0 auto;  
+    background-color: var(--color-2);  
+    border-radius: 8px;  
+    padding: 20px;  
+    max-width: 500px;  
+   }  
+   h1 {  
+    font-size: 30px;  
+    font-weight: 500;  
+    text-transform: uppercase;  
+   }  
+   p {  
+    margin-top: 10px;  
+    font-size: 16px;  
+    font-weight: 500;  
+    letter-spacing: 1px;  
+    line-height: 25px;  
+   }  
+   button {  
+    background-color: var(--color-4);  
+    padding: 10px 30px;  
+    border: none;  
+    font-size: 24px;  
+    text-transform: uppercase;  
+    color: var(--color-3);  
+    border-radius: 4px;  
+    margin-top: 20px;  
+    cursor: pointer;  
+   }  
+   .theme-switcher {  
+    position: absolute;  
+    right: 30px;  
+    top: 10px;  
+   }  
+   input {  
+    width: 0;  
+    height: 0;  
+    display: none;  
+    visibility: hidden;  
+   }  
+   label {  
+    cursor: pointer;  
+    display: block;  
+    text-indent: -9999px;  
+    height: 30px;  
+    width: 60px;  
+    border-radius: 50px;  
+    background-color: rgb(255, 255, 255);  
+    transition: 0.5s ease background-color;  
+   }  
+   label::after {  
+    position: absolute;  
+    content: "";  
+    width: 20px;  
+    height: 20px;  
+    border-radius: 50px;  
+    top: 50%;  
+    left: 5px;  
+    transform: translateY(-50%);  
+    background-color: rgb(46, 42, 68);  
+    transition: 0.5s ease;  
+   }  
+   input:checked + label::after {  
+    /* left: calc(100% - 2.5px); */  
+    left: calc(100% - 25px);  
+    background-color: aliceblue;  
+   }  
+   input:checked + label {  
+    background-color: rgb(25, 26, 37);  
+    border: 2px solid whitesmoke;  
+   }  
